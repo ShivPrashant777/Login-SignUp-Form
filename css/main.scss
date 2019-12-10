@@ -11,7 +11,15 @@ body {
 .signup-form-container {
     box-shadow: 2px 2px 12px rgb(66, 66, 66);
     background-color: rgba(255, 255, 255, 0.76);
-    width: 400px;
+    width: 380px;
+    margin: 150px auto;
+    border-radius: 5px;
+}
+
+.login-form-container {
+    box-shadow: 2px 2px 12px rgb(66, 66, 66);
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 380px;
     margin: 150px auto;
     border-radius: 5px;
 }
@@ -23,6 +31,10 @@ h1 {
     color: rgb(255, 255, 255);
     text-shadow: 0px 1px 3px rgb(78, 78, 78);
     border-radius: 5px 5px 0 0;
+}
+
+h1.login-header {
+    background-color: rgb(13, 129, 197);
 }
 
 .signup-form {
@@ -51,6 +63,10 @@ button[type=submit] {
     font-size: 1em;
     padding: 10px;
     margin: 10px 0;
+}
+
+button.login-submit {
+    background-color: rgb(13, 129, 197);
 }
 
 .signup-form-container p {

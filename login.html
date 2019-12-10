@@ -8,15 +8,14 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="signup-form-container">
-        <h1>Sign Up</h1>
+    <div class="login-form-container">
+        <h1 class="login-header">Login</h1>
         <form method="POST" class="signup-form" action="php/validation.php">
             <input type="text" name="email" placeholder="Email" class="input-field" required>
             <span class="email_err"><?php echo $email_err; ?></span>
             <input type="password" name="pass" placeholder="Password" class="input-field" required>
-            <input type="password" name="pass_repeat" placeholder="Repeat Password" class="input-field" required>
-            <button type="submit">Sign Up</button>
-            <p>Already have an account? <a href="login.html">Login</a></p>
+            <button type="submit" class="login-submit">Login</button>
+            <p>Create an account now <a href="index.html">Sign Up</a></p>
         </form>
     </div>
 </body>
