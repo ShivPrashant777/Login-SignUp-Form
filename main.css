@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#942e86), to(#C33764));
+  background: linear-gradient(to left, #942e86, #C33764);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.signup-form-container {
+  -webkit-box-shadow: 2px 2px 12px #424242;
+          box-shadow: 2px 2px 12px #424242;
+  background-color: rgba(255, 255, 255, 0.76);
+  width: 380px;
+  margin: 150px auto;
+  border-radius: 5px;
+}
+
+.login-form-container {
+  -webkit-box-shadow: 2px 2px 12px #424242;
+          box-shadow: 2px 2px 12px #424242;
+  background-color: rgba(255, 255, 255, 0.76);
+  width: 380px;
+  margin: 150px auto;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #0c8858;
+  color: white;
+  text-shadow: 0px 1px 3px #4e4e4e;
+  border-radius: 5px 5px 0 0;
+}
+
+h1.login-header {
+  background-color: #0d81c5;
+}
+
+.signup-form {
+  padding: 20px 30px 20px 20px;
+}
+
+.input-field {
+  margin: 10px 0;
+  padding: 10px 00 10px 10px;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.0em;
+}
+
+.input-field:focus {
+  background-color: rgba(255, 255, 255, 0.733);
+  outline: none;
+}
+
+button[type=submit] {
+  border: none;
+  border-radius: 2px;
+  background-color: #1db46e;
+  color: white;
+  font-size: 1em;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button.login-submit {
+  background-color: #0d81c5;
+}
+
+.signup-form-container p {
+  margin: 0;
+  text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .signup-form-container {
+    width: 500px;
+    height: 400px;
+  }
+  .input-field {
+    margin: 15px 0;
+    padding: 10px 00 10px 10px;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.0em;
+  }
+  .signup-form-container p {
+    margin-bottom: 5px;
+  }
+  button[type=submit] {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 1.1em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
