@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: -webkit-linear-gradient(to left,rgb(148, 46, 134), #C33764);  
+    background: linear-gradient(to left, rgb(148, 46, 134), #C33764); 
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.signup-form-container {
+    box-shadow: 2px 2px 12px rgb(66, 66, 66);
+    background-color: rgba(255, 255, 255, 0.76);
+    width: 400px;
+    margin: 150px auto;
+    border-radius: 5px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: rgb(12, 136, 88);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 3px rgb(78, 78, 78);
+    border-radius: 5px 5px 0 0;
+}
+
+.signup-form {
+    padding: 20px 30px 20px 20px;
+}
+
+.input-field {
+    margin: 10px 0;
+    padding: 10px 00 10px 10px;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.0em;
+}
+
+.input-field:focus {
+    background-color: rgba(255, 255, 255, 0.733);
+    outline: none;
+}
+
+button[type=submit] {
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(29, 180, 110);
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.signup-form-container p {
+    margin: 0;
+    text-align: right;
+}
+
+@media only screen and (min-width:768px){
+    .signup-form-container {
+        width: 500px;
+        height: 400px;
+    }
+
+    .input-field {
+        margin: 15px 0;
+        padding: 10px 00 10px 10px;
+        width: 100%;
+        border: none;
+        border-radius: 2px;
+        font-size: 1.0em;
+    }
+
+    .signup-form-container p {
+        margin-bottom: 5px;
+    }
+
+    button[type=submit] {
+        margin: 20px 0;
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+    
+}

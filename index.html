@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="signup-form-container">
+        <h1>Sign Up</h1>
+        <form method="POST" class="signup-form" action="php/validation.php">
+            <input type="text" name="email" placeholder="Email" class="input-field" required>
+            <span class="email_err"><?php echo $email_err; ?></span>
+            <input type="password" name="pass" placeholder="Password" class="input-field" required>
+            <input type="password" name="pass_repeat" placeholder="Repeat Password" class="input-field" required>
+            <button type="submit"> Sign Up</button>
+            <p>Already have an account? <a href="#">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>
