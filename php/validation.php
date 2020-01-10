@@ -8,6 +8,8 @@
 </head>
 <body>
     <?php 
+    require_once "config.php";
+
         $email = $pass = $pass_repeat = "";
 
         function test_input($data) {
@@ -27,22 +29,20 @@
             $pass_repeat = test_input($_POST["pass_repeat"]);
         }
         
-        //Creating Connection
-        $conn = new mysqli("localhost", "root", "", "userInfo");
-
-        if ($conn->connect_error) {
-            die("Connection Failed:".$conn->connect_error);
-        }
         
         $sql = "INSERT INTO loginInfo
         VALUES('$email', '$pass')";
 
-        if ($conn->query($sql) === TRUE) {
-            echo "New record created successfully";
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+        if ($pass == $pass_repeat) {
+            if ($conn->query($sql) === TRUE) {
+                echo "New record created successfully";
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
         }
-
+        else {
+            echo "Password did not match ";
+        }
         $conn->close();
 
     ?>
